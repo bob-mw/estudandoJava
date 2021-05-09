@@ -17,10 +17,13 @@ public class Lacos {
 		
 		System.out.println("O total é: " + total);
 		
+		System.out.println("   ");
 		
-		/*for (int count = 1; count >= 10; count += count) {
-			System.out.println("contando");
-		}*/
+		System.out.println("Laço com for");
+		
+		for (int count2 = 1; count2 <= 10; count2++) {
+			System.out.println("contando"+count2);
+		}
 	}
 
 }
