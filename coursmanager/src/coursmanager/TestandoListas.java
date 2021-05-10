@@ -8,7 +8,7 @@ public class TestandoListas {
 		String cours1 = "Print | code Hello World in Java";
 		String cours2 = "Conditional";
 		
-		ArrayList<String> coursList  = new ArrayList();
+		ArrayList<String> coursList  = new ArrayList<>();
 		
 		coursList.add(cours0);
 		coursList.add(cours1);
