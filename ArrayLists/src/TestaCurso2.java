@@ -11,6 +11,7 @@ public class TestaCurso2 {
 		curso.adicionar(new Aula("Transmitir", 30));
 		
 		int tempoTotal = curso.tempoTotal();
+		
 		Collections.sort(aulas, Comparator.comparing(Aula::getTempo));
 		
 		System.out.println(curso);
