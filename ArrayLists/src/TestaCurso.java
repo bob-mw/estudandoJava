@@ -5,7 +5,6 @@ public class TestaCurso {
 		Curso ingles = new Curso("Ingles para todos", "Cherosa");
 		List<Aula> aulas = ingles.getAulas();
 		
-		aulas.add(new Aula("hello world", 32));
 		ingles.adicionar(new Aula("verbs", 34));
 		
 		System.out.println(ingles);
