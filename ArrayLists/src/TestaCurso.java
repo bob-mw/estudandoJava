@@ -6,7 +6,9 @@ public class TestaCurso {
 		List<Aula> aulas = ingles.getAulas();
 		
 		aulas.add(new Aula("hello world", 32));
+		ingles.adicionar(new Aula("verbs", 34));
 		
+		System.out.println(ingles);
 		System.out.println(aulas);
 	}
 }

@@ -22,6 +22,10 @@ public class Curso {
 		return aulas;
 	}
 	
+	public void adicionar(Aula aula) {
+		this.aulas.add(aula);
+	}
+	
 	@Override
 	public String toString() {
 		return "{" + "curso: " + nome + ","+ " instrutor: " + instrutor + "}";
