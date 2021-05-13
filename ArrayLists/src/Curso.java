@@ -19,7 +19,7 @@ public class Curso {
 	}
 	
 	public List<Aula> getAulas() {
-		return Collections.unmodifiableList(aulas);
+		return aulas;
 	}
 	
 	public void adicionar(Aula aula) {
