@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class List {
+public class TestaAula {
 	public static void main(String[] args) {
 		Aula aula1 = new Aula("matemática", 12);
 		Aula aula2 = new Aula("Portugês", 50);
