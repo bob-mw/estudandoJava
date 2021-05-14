@@ -63,7 +63,7 @@ public class LoginScreen extends JFrame {
 				if (checkLogin(textField.getText(), new String(passwordField.getPassword()))) {
 					JOptionPane.showMessageDialog(null, "Seja bem vindo " + textField.getText());
 				} else {
-					JOptionPane.showMessageDialog(null, textField.getText() + " não foi encontrado");
+					JOptionPane.showMessageDialog(null, textField.getText() + " não foi encontrado", "titulo", JOptionPane.INFORMATION_MESSAGE);
 				}
 				
 			}
