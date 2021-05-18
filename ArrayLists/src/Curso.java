@@ -27,6 +27,7 @@ public class Curso {
 	}
 	
 	public int tempoTotal() {
+		
 		/*
 		int tempo = 0;
 		  for (Aula aula : aulas) {
