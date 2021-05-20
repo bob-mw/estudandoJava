@@ -17,6 +17,17 @@ public class Aluno {
 	}
 	
 	@Override
+	public boolean equals(Object obj) {
+		Aluno other = (Aluno) obj;
+		return this.name.equals(other.getName());
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.name.hashCode();
+	}
+	
+	@Override
 	public String toString() {
 		return name;
 	}
