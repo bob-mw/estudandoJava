@@ -4,6 +4,7 @@ public class Curso {
 	private String nome;
 	private String instrutor;
 	private List<Aula> aulas = new ArrayList<Aula>();
+	private Set<Aluno> alunos = new HashSet<Aluno>();
 	
 	public Curso (String nome, String instrutor) {
 		this.nome = nome;
@@ -24,6 +25,14 @@ public class Curso {
 	
 	public void adicionar(Aula aula) {
 		this.aulas.add(aula);
+	}
+	
+	public Set<Aluno> getAlunos() {
+		return Collections.unmodifiableSet(alunos);
+	}
+	
+	public void matricularAluno(Aluno aluno) {
+		alunos.add(aluno);
 	}
 	
 	public int tempoTotal() {
