@@ -12,6 +12,8 @@ public class CursoComAluno {
 		filosofia.matricularAluno(aluno2);
 				
 		filosofia.verificaMatricula(344);
+		
+		filosofia.buscaMatricula(21);
 			
 	}
 }

@@ -5,6 +5,7 @@ public class Curso {
 	private String instrutor;
 	private List<Aula> aulas = new ArrayList<Aula>();
 	private Set<Aluno> alunos = new HashSet<Aluno>();
+	private Map<Integer, Aluno> mapListMatriculaAluno = new HashMap<>();
 
 	public Curso(String nome, String instrutor) {
 		this.nome = nome;
@@ -35,6 +36,12 @@ public class Curso {
 
 	public void matricularAluno(Aluno aluno) {
 		alunos.add(aluno);
+		mapListMatriculaAluno.put(aluno.getEstudant_id(), aluno);
+	}
+	
+	public Aluno buscaMatricula(int num) {
+		System.out.println(mapListMatriculaAluno.get(num));
+		return mapListMatriculaAluno.get(num);
 	}
 
 	public int tempoTotal() {
