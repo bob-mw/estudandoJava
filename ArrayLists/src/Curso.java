@@ -10,6 +10,8 @@ public class Curso {
 		this.nome = nome;
 		this.instrutor = instrutor;
 	}
+	
+	
 
 	public String getNome() {
 		return nome;
@@ -39,6 +41,15 @@ public class Curso {
 		return this.aulas.stream().mapToInt(Aula::getTempo).sum();
 	}
 	
+	public Aluno verificaMatricula(int matricula) {
+		for (Aluno aluno : alunos) {
+			if (aluno.getEstudant_id() == matricula) {
+				System.out.println("A matricula:  " + matricula + " pertence a pessoa estudante " + aluno.getName());
+				return aluno;
+			}
+		}
+		throw new NoSuchElementException("Matricula " + matricula + " não encontrada");
+	}
 	
 
 	@Override

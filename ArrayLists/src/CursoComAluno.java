@@ -1,12 +1,17 @@
 
 public class CursoComAluno {
 	public static void main(String[] args) {
-
-		Aluno aluno1 = new Aluno("Pedro Emilio", 21);
 		
-		Aluno aluno2 = new Aluno("Pedro Emilio", 21);
+		Curso filosofia = new Curso("Filosofia", "Raquel");
+
+		Aluno aluno1 = new Aluno("Pedro Emilio", 344);
+		
+		Aluno aluno2 = new Aluno("Vitória Gabriely", 21);
+		
+		filosofia.matricularAluno(aluno1);
+		filosofia.matricularAluno(aluno2);
 				
-		System.out.println(aluno1.equals(aluno2));
+		filosofia.verificaMatricula(344);
 			
 	}
 }
