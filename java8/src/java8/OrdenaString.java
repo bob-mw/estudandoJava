@@ -23,8 +23,10 @@ public class OrdenaString {
 		
 		list.forEach(consumer);
 		
-		
+		list.forEach(s -> System.out.println(s));
 
 	}
 
 }
+
+
